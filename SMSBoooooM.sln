@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSBoooooM", "SMSBoooooM\SMSBoooooM.csproj", "{826CC3A2-5213-4D9A-9237-10E0035810CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSAPI", "SMSAPI\SMSAPI.csproj", "{BE5EAD66-0377-4BB2-8F1C-E1C329F5293F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API1", "API1\API1.csproj", "{48774CE3-11DF-4FD9-A6D2-227F57AC0C56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{826CC3A2-5213-4D9A-9237-10E0035810CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{826CC3A2-5213-4D9A-9237-10E0035810CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{826CC3A2-5213-4D9A-9237-10E0035810CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE5EAD66-0377-4BB2-8F1C-E1C329F5293F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5EAD66-0377-4BB2-8F1C-E1C329F5293F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5EAD66-0377-4BB2-8F1C-E1C329F5293F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5EAD66-0377-4BB2-8F1C-E1C329F5293F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48774CE3-11DF-4FD9-A6D2-227F57AC0C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48774CE3-11DF-4FD9-A6D2-227F57AC0C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48774CE3-11DF-4FD9-A6D2-227F57AC0C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48774CE3-11DF-4FD9-A6D2-227F57AC0C56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
