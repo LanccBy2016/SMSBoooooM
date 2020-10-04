@@ -13,7 +13,7 @@ namespace SMSAPI
         protected string mobile;
         protected HttpWebResponse response;
 
-        public abstract SMSAPIRunResultDto Run(string _mobile);
+        public abstract Task<SMSAPIRunResultDto> Run(string _mobile);
 
         protected string ResponseStr(HttpWebResponse response)
         {

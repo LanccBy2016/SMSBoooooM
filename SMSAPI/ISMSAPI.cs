@@ -15,6 +15,6 @@ namespace SMSAPI
         /// </summary>
         /// <param name="phoneNum">手机号</param>
         /// <returns>返回结果</returns>
-        SMSAPIRunResultDto Run(string mobile);
+        Task<SMSAPIRunResultDto> Run(string mobile);
     }
 }

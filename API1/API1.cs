@@ -1,6 +1,7 @@
 ﻿using SMSAPI;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -11,20 +12,16 @@ namespace API1
 {
     public class API1 : SMSAPIBase
     {
-        public override SMSAPIRunResultDto Run(string _mobile)
+        public override async Task<SMSAPIRunResultDto> Run(string _mobile)
         {
-            return new SMSAPIRunResultDto
-            {
-                IsSuccess = true,
-                Message = this.GetType().Name
-            };
+            mobile = _mobile;
+            SMSAPIRunResultDto result = new SMSAPIRunResultDto();
 
-            //mobile = _mobile;
-            //return new SMSAPIRunResultDto
-            //{
-            //    IsSuccess = Request_m_client_10010_com(out response),
-            //    Message = ResponseStr(response)
-            //};
+            await Task.Run(() => {
+                result.IsSuccess = Request_m_client_10010_com(out response);
+                result.Message = ResponseStr(response);
+            });
+            return result;
         }
 
         private bool Request_m_client_10010_com(out HttpWebResponse response)
