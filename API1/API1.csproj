@@ -42,9 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API2.cs" />
-    <Compile Include="API1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="小智Logo.cs" />
+    <Compile Include="多粉.cs" />
+    <Compile Include="玫瑰里.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SMSAPI\SMSAPI.csproj">

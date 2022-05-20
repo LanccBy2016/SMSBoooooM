@@ -17,18 +17,21 @@ namespace SMSAPI
 
         protected string ResponseStr(HttpWebResponse response)
         {
-            var msg = "";
-            try
+            var msg = "未响应";
+            if (response != null)
             {
-                Stream receiveStream = response.GetResponseStream();
-                var readStream = new StreamReader(receiveStream, Encoding.UTF8);
-                msg = readStream.ReadToEnd();
-                readStream.Close();
-                response.Close();
-            }
-            catch (Exception ex)
-            {
-                msg = ex.Message;
+                try
+                {
+                    Stream receiveStream = response.GetResponseStream();
+                    var readStream = new StreamReader(receiveStream, Encoding.UTF8);
+                    msg = readStream.ReadToEnd();
+                    readStream.Close();
+                    response.Close();
+                }
+                catch (Exception ex)
+                {
+                    msg = ex.Message;
+                }
             }
             return msg;
         }
